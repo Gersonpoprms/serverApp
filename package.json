@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Servidor de aplicacion RMS AppServices",
   "main": "index.js",
-  "type":"commonjs",
+  "type": "commonjs",
   "scripts": {
     "build": "babel src --out-dir dist",
     "babel-node": "babel-node ",
@@ -39,6 +39,7 @@
     "@babel/core": "^7.15.5",
     "@babel/node": "^7.15.4",
     "@babel/preset-env": "^7.15.6",
+    "lodash": "^4.17.21",
     "nodemon": "^2.0.12"
   }
 }
