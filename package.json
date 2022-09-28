@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Servidor de aplicacion RMS AppServices",
   "main": "index.js",
-  "type": "module",
+  "type":"commonjs",
   "scripts": {
     "build": "babel src --out-dir dist",
     "babel-node": "babel-node ",
