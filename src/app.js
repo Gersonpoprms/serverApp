@@ -20,7 +20,7 @@ app.use('/public', express.static('public'));
 // Settings
 app.set("port", port);
 
-app.get('/', (req, res)=>{
+app.get('/api', (req, res)=>{
     res.json({
         name: app.get('pkg').name,
         description: app.get('pkg').description,
