@@ -27,6 +27,7 @@ export const signin = async (req, res)=>{
     
     
     const {IdUser_PK, Password }=req.body
+    console.log(IdUser_PK, Password)
     const rows = await pool.query("SELECT * FROM users WHERE IdUser_PK = ? AND Status ='active'", [IdUser_PK ]);
     if (rows.length > 0) {
         const user = rows[0];
