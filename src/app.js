@@ -20,7 +20,7 @@ app.use('/public', express.static('public'));
 // Settings
 app.set("port", port);
 
-app.get('/api', (req, res)=>{
+app.get('/', (req, res)=>{
 
     const rows = await pool.query("SELECT * FROM users WHERE 1",);
     res.json({status:200, data: rows , msj: "Bienvenido " + user.UserName});
