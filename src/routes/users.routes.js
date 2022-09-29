@@ -5,7 +5,7 @@ import * as userCtrl from '../controllers/user.controller.js';
 const router =Router();
 
 router.post('/',verifyToken, userCtrl.signup);
-router.get('/', userCtrl.getAll);
+router.get('/' , userCtrl.getAll);
 router.post('/getById', verifyToken, userCtrl.getById);
 router.put('/',verifyToken, userCtrl.update);
 router.delete('/',verifyToken, userCtrl.del);
