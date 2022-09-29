@@ -21,18 +21,13 @@ app.use('/public', express.static('public'));
 app.set("port", port);
 
 app.get('/', (req, res)=>{
-
-    const rows = await pool.query("SELECT * FROM users WHERE 1",);
-    res.json({status:200, data: rows , msj: "Bienvenido " + user.UserName});
-
-    /* res.json({
+    res.json({
         name: app.get('pkg').name,
         description: app.get('pkg').description,
         version: app.get('pkg').version,
         author: app.get('pkg').author
     
-    }); */
-
+    });
 });
 
 app.use(routes);
