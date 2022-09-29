@@ -1,8 +1,8 @@
 import { json } from "express";
 import jwt from "jsonwebtoken";
-import config from "../config";
-import pool from "../database";
-import { encryptPassword, decodeUserPermission, encodeUserPermission, permissionInit } from "../libs/helpers";
+import config from "../config.js";
+import pool from "../database.js";
+import { encryptPassword, decodeUserPermission, encodeUserPermission, permissionInit } from "../libs/helpers.js";
 
 function convertToBinary (number) {
     if (number > 0) {

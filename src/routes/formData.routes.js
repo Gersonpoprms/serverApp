@@ -1,6 +1,6 @@
 import { Router } from "express";
-import * as formDataCtrl from "../controllers/formData.controller";
-import { verifyToken, saveFile } from "../middelwares";
+import * as formDataCtrl from "../controllers/formData.controller.js";
+import { verifyToken, saveFile } from "../middelwares/index.js";
 import  multer from "multer";
 import path from 'path'
 import  fs  from "fs";

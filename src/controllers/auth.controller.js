@@ -1,8 +1,8 @@
-import pool from "../database";
+import pool from "../database.js";
 import jwt from 'jsonwebtoken';
-import config from "../config";
+import config from "../config.js";
 import bcrypt from "bcryptjs";
-import { encryptPassword, matchPassword ,  decodeUserPermission} from "../libs/helpers";
+import { encryptPassword, matchPassword ,  decodeUserPermission} from "../libs/helpers.js";
 
 
 export const isSignin = async (req, res)=>{

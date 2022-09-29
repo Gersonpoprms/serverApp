@@ -1,9 +1,9 @@
 import express from 'express';
 import morgan from "morgan";
-import pkg from "../package.json";
-import config from "./config";
+import pkg from "../package.json" assert { type: "json" };
+import config from "./config.js";
 import cors from "cors"
-import routes from "./routes/index";
+import routes from "./routes/index.js";
 //import {createRoles} from "./libs/initialSetup";
 
 

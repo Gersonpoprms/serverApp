@@ -1,6 +1,6 @@
 import mysql from "mysql";
 import { promisify } from "util";
-import config from "./config";
+import config from "./config.js";
 
 const { database } = config;
 

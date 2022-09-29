@@ -1,5 +1,5 @@
-import pool from "../database";
-import { setQuery } from "../libs/helpers";
+import pool from "../database.js";
+import { setQuery } from "../libs/helpers.js";
 
 export const createFormat = async (req, res)=>{
    

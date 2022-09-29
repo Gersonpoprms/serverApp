@@ -1,6 +1,6 @@
 import { Router } from "express";
-import * as formatsCtrl from "../controllers/formats.controller";
-import { verifyToken } from "../middelwares";
+import * as formatsCtrl from "../controllers/formats.controller.js";
+import { verifyToken } from "../middelwares/index.js";
 const router = Router();
 
 router.get('/:type', verifyToken, formatsCtrl.getFormats);

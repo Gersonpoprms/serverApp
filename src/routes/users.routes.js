@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { verifyToken } from "../middelwares";
-import * as userCtrl from '../controllers/user.controller';
+import { verifyToken } from "../middelwares/index.js";
+import * as userCtrl from '../controllers/user.controller.js';
 
 const router =Router();
 

@@ -1,7 +1,7 @@
 
 
-import pool from "../database";
-import { setQuery } from "../libs/helpers";
+import pool from "../database.js";
+import { setQuery } from "../libs/helpers.js";
 
 export const createEmployee = async (req, res)=>{
     const {data, type} =req.body;

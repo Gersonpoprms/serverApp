@@ -1,7 +1,7 @@
-import pool from "../database";
+import pool from "../database.js";
 import jwt from 'jsonwebtoken';
-import config from "../config";
-import { encryptPassword, decodeUserPermission, maxRoll,encodeUserPermission, permissionInit } from "../libs/helpers";
+import config from "../config.js";
+import { encryptPassword, decodeUserPermission, maxRoll,encodeUserPermission, permissionInit } from "../libs/helpers.js";
 
 
 export const signup = async (req, res)=>{

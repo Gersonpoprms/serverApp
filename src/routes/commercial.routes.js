@@ -1,6 +1,6 @@
 import { Router } from "express";
-import * as commercialCtrl from "../controllers/commercial.controller";
-import { verifyToken } from "../middelwares";
+import * as commercialCtrl from "../controllers/commercial.controller.js";
+import { verifyToken } from "../middelwares/index.js";
 const router = Router();
 
 /*  Commercial types

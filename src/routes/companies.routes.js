@@ -1,6 +1,6 @@
 import { Router } from "express";
-import * as companyCtrl from "../controllers/companies.controller";
-import { verifyToken } from "../middelwares";
+import * as companyCtrl from "../controllers/companies.controller.js";
+import { verifyToken } from "../middelwares/index.js";
 const router =Router();
 
 

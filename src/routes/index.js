@@ -1,16 +1,16 @@
 import { Router } from "express";
-import { verifyToken } from "../middelwares";
-import user from "./users.routes";
-import auth from "./auth.routes";
-import companies from "./companies.routes";
-import employees from "./employee.routes";
-import contracts from "./contract.routes";
-import commercial from "./commercial.routes";
-import calendar from "./calendar.routes";
-import formats from "./formats.routes";
-import formData from './formData.routes';
+import { verifyToken } from "../middelwares/index.js";
+import user from "./users.routes.js";
+import auth from "./auth.routes.js";
+import companies from "./companies.routes.js";
+import employees from "./employee.routes.js";
+import contracts from "./contract.routes.js";
+import commercial from "./commercial.routes.js";
+import calendar from "./calendar.routes.js";
+import formats from "./formats.routes.js";
+import formData from './formData.routes.js';
 
-import * as data from "../controllers/data.controller";
+import * as data from "../controllers/data.controller.js";
 const router = Router();
 
 

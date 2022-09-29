@@ -1,6 +1,6 @@
 import { Router } from "express";
-import * as employeeCtrl from "../controllers/employee.controller";
-import { verifyToken } from "../middelwares";
+import * as employeeCtrl from "../controllers/employee.controller.js";
+import { verifyToken } from "../middelwares/index.js";
 const router = Router();
 
 router.get('/:type', verifyToken, employeeCtrl.getEmployees);

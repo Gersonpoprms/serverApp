@@ -1,6 +1,6 @@
 import { Router } from "express";
-import * as calendarCtrl from "../controllers/calendar.controller";
-import { verifyToken } from "../middelwares";
+import * as calendarCtrl from "../controllers/calendar.controller.js";
+import { verifyToken } from "../middelwares/index.js";
 const router = Router();
 
 

@@ -1,5 +1,5 @@
-import pool from "../database";
-import { setQuery } from "../libs/helpers";
+import pool from "../database.js";
+import { setQuery } from "../libs/helpers.js";
 import path from 'path'
 
 export const single = async (req, res)=>{
