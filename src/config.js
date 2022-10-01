@@ -31,18 +31,17 @@ database:{
   password:process.env.DATABASE_PASSWORD || "G3r50np0p@", 
   database:process.env.DATABASE_NAME || "appservices", 
   port: process.env.DATABASE_PORT || 3306, 
-  ssl:{
-    ca:fs.readFileSync("public/SSL/DigiCertGlobalRootCA.crt.pem")
-      }
   },
 
   port: process.env.PORT || 4010,
   SECRET: 'RMS-WebApp-API',
   dest:'./public/'
-};
+}
 
-
-
+/* ssl:{
+    ca:fs.readFileSync("public/SSL/DigiCertGlobalRootCA.crt.pem")
+      }
+  }, */
 /* export default {
    database: {
      connectionLimit: 10,
