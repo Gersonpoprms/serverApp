@@ -2,12 +2,48 @@
  * Reading Environment Variables
  */
  import { config } from "dotenv";
+ import fs from "fs";
  config();
  
 
 
 
- export default {
+/*  export default {
+   database: {
+     connectionLimit: 10,
+     host: process.env.DATABASE_HOST || "containers-us-west-83.railway.app",
+     user: process.env.DATABASE_USER || "root",
+     password: process.env.DATABASE_PASSWORD || "lSbcLmR5CD8vHgGMzNgt",
+     database: process.env.DATABASE_NAME || "railway",
+     port: process.env.DATABASE_PORT || 6404
+     
+   },
+   port: process.env.PORT || 4010,
+   SECRET: 'RMS-WebApp-API',
+   dest:'./public/'
+ }; */
+/* ------------MIcrosoft azure ------------------- */ 
+export default {
+
+database:{
+  host:process.env.DATABASE_HOST || "rmsappserver.mysql.database.azure.com", 
+  user:process.env.DATABASE_USER || "rmsappserver", 
+  password:process.env.DATABASE_PASSWORD || "G3r50np0p@", 
+  database:process.env.DATABASE_NAME || "appservices", 
+  port: process.env.DATABASE_PORT || 3306, 
+  ssl:{
+    ca:fs.readFileSync("public/SSL/DigiCertGlobalRootCA.crt.pem")
+      }
+  },
+
+  port: process.env.PORT || 4010,
+  SECRET: 'RMS-WebApp-API',
+  dest:'./public/'
+};
+
+
+
+/* export default {
    database: {
      connectionLimit: 10,
      host: process.env.DATABASE_HOST || "localhost",
@@ -18,5 +54,5 @@
    port: process.env.PORT || 4010,
    SECRET: 'RMS-WebApp-API',
    dest:'./public/'
- };
+ }; */
  
