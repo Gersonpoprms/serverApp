@@ -28,6 +28,7 @@ router.use("/api/calendar",calendar);
 
 
 
+
 // consultas personalizadas
 
 router.use("/api/uniqueList/:table/:column", verifyToken, data.getUniqueList);
